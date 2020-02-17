@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import axios from "axios";
+// import axios from "axios";
+import axios from "../../axios";
 
 import Post from "../../components/Post/Post";
 import FullPost from "../../components/FullPost/FullPost";
@@ -27,7 +28,7 @@ class Blog extends Component {
         this.setState({ posts: updatedPosts });
       })
       .catch(err => {
-        //cancelToken error due to log below when used with interceptor
+        //cancelToken error due to log below when used with interceptor without a return request in func
         console.log(err);
         this.setState({ error: true });
       });
