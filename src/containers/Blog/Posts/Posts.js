@@ -16,6 +16,7 @@ export default class Posts extends Component {
   };
 
   componentDidMount() {
+    console.log(this.props);
     axios
       .get("/posts?_limit=5")
       .then(response => {
