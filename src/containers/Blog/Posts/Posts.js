@@ -7,8 +7,6 @@ import "./Posts.css";
 export default class Posts extends Component {
   state = {
     posts: []
-    // selectedPostId: null,
-    // error: false
   };
 
   postSelectedHandler = id => {
